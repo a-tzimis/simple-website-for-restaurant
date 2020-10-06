@@ -1,2 +1,0 @@
-A simple website that I've built as a student for my family's restaurant. The website is responsive (to a point) and uses mainly HTLM and CSS, appart from that some APIs have 
-also been used (ex Google Maps API) using Javascript
