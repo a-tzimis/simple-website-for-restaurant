@@ -1,0 +1,598 @@
+@font-face{
+	font-family: logoFont;
+	src: url(fonts/logo.ttf);
+}
+@font-face{
+	font-family: navfont;
+	src: url(fonts/nav.ttf);
+}
+@font-face{
+	font-family: textFont;
+	src: url(fonts/text.ttf);
+}
+@font-face{
+	font-family: greekFont;
+	src: url(fonts/greek.ttf);
+}
+@keyframes fadeIn {
+    from{opacity: 0.2}
+    to{opacity: 1}
+}
+
+body{
+	background-color: rgb(240,243,190);
+	margin-left:7%;
+	margin-right:auto;
+}
+
+/*Language Bar(header)*/
+a:hover{
+    cursor:pointer;
+}
+
+#header{
+	position:fixed;
+	background-color:black;
+	top:0px;
+	left:0px;
+	padding: 7px 0px 7px 0px;
+	margin-top:0px;
+	margin-left:0px;
+	width:100%;
+	height:25px;
+	z-index:2;
+}
+.flag{
+	position:relative;
+	float:left;
+	margin:0px 5px 0px 5px;
+}
+.flag img{
+	width:30px;
+	height: 26px;
+}
+/* Home Page CSS */
+#first{
+	position: relative;
+	z-index:0.5;
+	width: 90%;
+	height:auto;
+}
+
+#welcome{
+	position: absolute;
+	font-family: navFont;
+	font-size: 25px;
+	text-decoration: bold;
+	color: black;
+	margin-top: 1px;
+	top: 190px;
+}
+#logo{
+	position: absolute;
+	padding: 0px 80px 515px 80px;	
+	border-right: 1px solid orange;
+	border-left: 1px solid orange;
+	text-decoration: underline;
+	height: 430px;
+	left: 25%;
+	top: -45px;
+	font-family: logoFont;
+	color: rgb(240,243,190);
+	letter-spacing: 7px;
+	font-size: 55px;
+	background-color: rgba(64,224,208,0.35);
+	animation-name: fadeIn;
+    animation-duration: 3s;
+}
+#links{
+	position:absolute;
+	top:200px;
+	right:20px;
+	width:100px;
+	border-left:1px solid;
+	border-right:1px solid;
+	background-color: rgba(64,224,208,0.8);
+}
+#links .link{
+	width: 90px;
+	height: 58px;
+	margin-top:15px;
+	padding:0 7px 7px 0;
+	float: left;
+}
+#current{
+	border: solid 2px;
+	border-top: none;
+	border-bottom: none;
+	width: 100%;
+	height: 900px;
+}
+#left{
+	position: absolute;
+	left: 0px;
+	top: 350px;
+}
+#right{
+	position: absolute;
+	right: 0;
+	top: 350px;
+}
+#left img{
+	border: none;
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+}
+#right img{
+	border: none;
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+}
+#left img:hover{
+	opacity: 0.6;
+}
+#right img:hover{
+	opacity: 0.6;
+}
+
+#navlist{
+	position: absolute;
+	bottom: 0px;
+	left: 25%;
+	list-style-type: none;
+}
+
+#navlist h3{
+	font-family: helvetica;
+	color: black;
+	font-weight: bold;
+	font-size: 16px;
+}
+#navlist li{
+	display: inline-block;
+	width: 100px;
+	padding: 1px;
+	background-color: rgba(64,224,208,0.8);
+	padding-bottom: none;
+}
+#navlist li :hover{
+	animation-name: fadeIn;
+    animation-duration: 4s;
+}
+.mitem img{
+	width: 50px;
+	height: 50px;
+}
+
+/* Menu Div CSS */
+
+#menu{
+	position: relative;
+	font-family: greekFont;
+	border-left: solid 2px;
+	border-right: solid 2px;
+	width: 90%;
+	height: 700px;
+	margin-top: 50px;
+}
+#menuIntro{
+	font-size: 25px;
+}
+
+#menuIntro p{
+	position: absolute;
+	opacity:0.75;
+	top: 220px;
+	left: 110px;
+	padding:  2px;
+	padding-bottom: 20px;
+	width: 55%;
+	text-align: center;
+	padding-right: none;
+	padding-bottom: 10px;
+	background-color: #b33c00;
+	border: solid 1px orange;
+	z-index: 1;
+}
+
+.title{
+	position: absolute;
+	top: -80px;
+	left: 5px;
+	font-family: navfont;
+	font-size: 28px;
+	text-decoration: underline;
+}
+
+.souvlaki{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 65%;
+}
+.spaghetti{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 35%;
+}
+
+#actualMenu{
+	position: absolute;
+	width: 100%;
+	top: 280px;
+	left: 1%;
+	margin-left: 0;
+}
+
+.menuPage{
+	display: inline-block;
+	float: left;
+	width: 25%;
+	height: auto;
+}
+
+.menuPage h2{
+	font-size: 25px;
+	margin: 30px 0px 0px 0px;
+	padding-right: 0px;
+	background-color: #b33c00;
+	color: orange;
+	border-right: 2px solid;
+	border-left: 2px solid;
+	width:218px;
+}
+
+.menuPage img{
+	float: left;
+	width: 220px;
+	height:330px;
+	margin-left: 0px;
+	margin-right: 5px;
+}
+.menuPage img:hover{
+	opacity: 0.6;
+}
+
+.zoomed{
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:2;
+}
+
+/* Info Div */
+#info{
+	position: relative;
+	float: left;
+	border-right: 2px solid;
+	border-left: 2px solid;
+	width:90%;
+	height: 2500px;
+}
+
+#info p{
+	margin-right: 15%;
+	margin-left: 15%;
+	margin-bottom:0px;
+	border-left: 1px solid;
+	border-right:1px solid;
+}
+#info h3{
+	font-family: navfont;
+	font-size: 30px;
+	margin-left: 5px;
+	text-decoration: underline;
+}
+
+#restaurant{
+	font-family: greekFont;
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+	margin-right: 0px;
+	height: 900px;
+}
+
+#restaurant img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 900px;
+	opacity: 0.4;
+}
+
+#ocations {
+	position:relative;
+	float:bottom;
+	text-align:center; 
+	font-size:20px;
+	background-color:white; 
+	opacity:0.65; 
+	width: 70%;
+	height:215px;
+	margin-left:15%;
+	border-bottom:2px solid;
+	border-top:2px solid;
+}
+#ocations p{
+	font-family:greekFont;
+	text-decoration:none;
+	border:none;
+}
+
+#bar{
+	font-family: greekFont;
+	float: left;
+	font-size: 22px;
+	text-align: center;
+	line-height: 30px;
+	margin-right: 0px;
+	height: 800px;
+}
+
+#bar img{
+	position: absolute;
+	top: 900px;
+	left: 0px;
+	width: 100%;
+	height: 800px;
+	opacity: 0.4;
+}
+#bar a{
+	z-index: 1;
+}
+
+#beach{
+	font-family: greekFont;
+	float: left;
+	font-size: 22px;
+	text-align: center;
+	line-height: 30px;
+	margin-right: 0px;
+	height: 800px;
+}
+
+#beach img{
+	position: absolute;
+	top: 1700px;
+	left: 0px;
+	width: 100%;
+	height: 800px;
+	opacity: 0.4;
+}
+
+/* gallery Div CSS */
+
+#gallery{
+	position:relative;
+	float:left;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: 2px solid;
+	border-right: 2px solid;
+	margin-top:50px;
+	width:90%;
+}
+
+#gallery h3{
+	font-family: navfont;
+	font-size: 30px;
+	text-decoration: underline;
+	margin-left: 5px;
+}
+#gallery img{
+	float: left;
+	margin-top: 3px;
+	margin-right: 3px;
+	width: 155px;
+	height: 110px;
+}
+#gallery img:hover{
+	opacity: 0.6;
+}
+
+#contact{
+	position:relative;
+	float:left;
+	font-family: greekFont;
+	font-size: 22px;
+	margin-top: 200px;
+	border-right: 2px solid;
+	border-left: 2px solid;
+	width: 90%;
+	height: 500px;
+	text-decoration: underline;
+}
+#contact-details{
+	float: left;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	background-color: white;
+	padding: 10px;
+	padding-bottom: 177px;
+	font-size: 22px;
+	line-height: 50px;
+	text-decoration: underline;
+}
+#contact h3{
+	margin-left: 5px;
+}
+#googleMap{
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	border: 1px solid;
+}
+
+#footer{
+	position:absolute;
+	bottom:0px;
+	height:200px;
+	width:100%;
+	background-color:black;
+	font-family:greekFont;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	bottom:-450px;
+}
+#footer h2{
+	font-size:22px;
+	color: white;
+	left: 0px;
+}
+#footer img{
+	width: 200px;
+	height: 190px;
+	float:right;
+}
+#footer ul{
+    font-family:greekFont;
+	float:left;
+    line-height:30px;
+	margin-right:10px;
+	font-size:20px;
+}
+footer li{
+	color:white;
+}
+
+#formDiv{
+    position:absolute;
+    top:483px;
+    left:400px;
+    font-family:greekFont;
+    font-size:18px;
+    padding: 10px 20px 20px 20px;
+    text-decoration:none;
+    background-color:white;
+    border-left:1px solid;
+    border-right:1px solid;
+}
+#actualform{
+    display:none;
+}
+
+@media only screen and (max-width: 1600px) {
+	body{
+		margin-left:5px;
+		margin-right:5px;
+	}
+	#logo{
+	    left:15%;
+		height: 280px;
+	}
+	#current{
+		height: 750px;
+	}
+	#first{
+		width:100%;
+	}
+	#navlist{
+        left: 15%;
+    }
+	#header{
+		width:100%;
+	}
+	#gallery{
+		margin-top: 40px;
+		width:100%;
+	}
+	#info{
+	    width:100%;
+		height:1800px;
+
+        rgin10: px 0 pxpxpx	}
+	#info p{
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+	
+	.menuPage{
+		margin-top:0;
+	}
+	#menuIntro p{
+		top:170px;
+	}
+	#restaurant{
+		height: 600px;
+	}
+	#restaurant img{
+	    height:600px;
+	    width:100%;
+	    top:0;
+	}
+	#bar{
+		height: 600px;
+	}
+	#bar img{
+	    width:100%;
+	    height:600px;	
+		top: 600px;
+	}
+	#beach{
+		height: 600px;
+	}
+	#beach img{
+	    width:100%;
+	    height:600px;
+		top: 1200px;
+	}
+	.menuPage h6{
+		margin-top: 50px;
+	}
+	#menu{
+		margin-top: 20px;
+		width:100%;
+	}
+	#contact{
+		margin-top: 200px;
+		width:100%;
+	}
+	.title{
+		top: -20px;
+		z-index: 1;
+	}
+	.souvlaki{
+		z-index: 0;
+	}
+}
+@media only screen and (max-width: 1300px){
+    #footer h4{
+		bottom: -400px;
+	}
+	#footer img{
+		bottom: -340px;	
+	    
+	}
+}
+@media only screen and (max-width: 900px){
+	#contact{
+		margin-top: 400px;
+	}
+	#menuIntro p{
+		top: 100px;
+	}
+	#footer h4{
+		bottom: -600px;
+	}
+	#footer img{
+		bottom: -540px;
+	}
+	#contact-details{
+		margin-top: 20px;
+		margin-left: 5px;
+	}
+	.menuPage{
+		width: 50%;
+	}
+	#ocations{
+	    visibility:hidden;
+	}
+	#info{
+		margin-top: 450px;
+	}
+}
